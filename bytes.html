@@ -1,0 +1,52 @@
+<meta charset  ="UTF-8">
+
+<script>
+	
+	var byte = parseFloat(prompt("Insira o valor em bytes: "));
+	var kylobyte = byte/1024;
+	var megabyte = kylobyte/1024;
+    var gigabyte = megabyte/1024;
+    var terabyte = gigabyte/1024;
+    var petabyte = terabyte/1024;
+    var exabyte = petabyte/1024;
+    var zettabyte = exabyte/1024;
+    var yottabyte = zettabyte/1024;
+
+    if(byte<1024 && byte>=1){
+        document.write(byte.toFixed(2) + " B");
+    }else{
+        if(kylobyte<1024 && kylobyte>=1){
+            document.write(kylobyte.toFixed(2)+" kB");
+        }else{
+            if(megabyte<1024 && megabyte>=1){
+                document.write(megabyte.toFixed(2)+" MB");
+            }else{
+                if(gigabyte<1024 && gigabyte>=1){
+                    document.write(gigabyte.toFixed(2)+" GB");
+                }else{
+                    if(terabyte<1024 && terabyte>=1){
+                        document.write(terabyte.toFixed(2)+" TB");
+                    }else{
+                        if(petabyte<1024 && petabyte>=1){
+                            document.write(petabyte.toFixed(2)+" PB");
+                        }else{
+                            if(exabyte<1024 && exabyte>=1){
+                                document.write(exabyte.toFixed(2)+" EB");
+                            }else{
+                                if(zettabyte<1024 && zettabyte>=1){
+                                    document.write(zettabyte.toFixed(2)+" ZB");
+                                }else{
+                                    if(yottabyte>=1){
+                                        document.write(yottabyte.toFixed(2)+ " YB");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+</script>
